@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<script>
+			var tam_x = 600;
+			var tam_y = 400;
+			var prefix = "http://www.antoniomelo.com.br/flash/games_swf/";
+			function writeFlash(url){
+				url=prefix+url;
+				var html="";
+				html+="<object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\""; 
+			html+="codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0\"";  
+			html+="width="+tam_x+" "; 
+			html+="height="+tam_y+">"; 
+			html+="<param name=movie value=\""+url+"\">"; 
+			html+="<param name=quality value=high>"; 
+			html+="<param bgcolor=#000000>"; 
+			html+="<embed src=\""+url+"\" "; 
+			html+="quality=high "; 
+			html+="pluginspage=\"http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash\" "; 
+			html+="type=\"application/x-shockwave-flash\" "; 
+			html+="bgcolor=#000000 "; 
+			html+="width="+tam_x+" "; 
+			html+="height="+tam_y+">"; 
+			html+="</embed>";
+			
+			document.getElementById("divFlash").innerHTML=html;
+			}				
+		</script>
+	</head>
+	<body>
+		<div id="divFlash" style="width:100%;text-align:center;height:420px">
+
+		</div>
+		
+		<div style="clear:both"></div>
+		<div style="width:100%"> 
+			<table width="100%">
+				<tr>
+					<td><a href='javascript:openn("zerooito.swf")' >Z8 shot</a></td>
+					<td><a href='javascript:writeFlash("cards_interface.swf")' >Mata Mata</a></td>
+					<td><a href='javascript:writeFlash("cheira_mar_english.swf")' >Fuga impossível</a></td>
+					<td><a href='javascript:writeFlash("duel.swf")' >Knight duel</a></td>
+					<td><a href='javascript:writeFlash("fastfood.swf")' >Fast Food</a></td>
+					<td><a href='javascript:writeFlash("freeway1.swf")' >Freeway</a></td>
+					<td><a href='javascript:writeFlash("genius.swf")' >Genius</a></td>
+					<td><a href='javascript:writeFlash("quadCubes.swf")' >Quad Cubes</a></td>
+					<td><a href='javascript:writeFlash("running.swf")' >Running</a></td>
+				</tr>
+				<tr>
+					<td><a href='javascript:writeFlash("train.swf")' >Train</a></td>
+					<td><a href='javascript:writeFlash("wave.swf")' >Wave</a></td>
+					<td><a href='javascript:writeFlash("bokosuka.swf")' >Bokosuka</a></td>
+					<td><a href='javascript:writeFlash("flecha.swf")' >Flecha</a></td>
+					<td><a href='javascript:writeFlash("cars.swf")' >Highway</a></td>
+					<td><a href='javascript:writeFlash("mith_player.swf")' >Myth</a></td>
+					<td><a href='javascript:writeFlash("photo_sequence.swf")' >Photo</a></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
